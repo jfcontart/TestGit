@@ -8,12 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var mTitleLabel : UILabel?
     
     @IBOutlet var mSegmentedBar : UISegmentedControl?
     @IBOutlet var mSegmentedBarB : UISegmentedControl?
+    
+    
+    @IBOutlet var mTableView : UITableView?
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return 5
+    }
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+     var tCell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
+        tCell.textLabel?.text = "Mon titre n° \(indexPath.section) - \(indexPath.row)"
+        
+        return tCell
+    }
+    
+    
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return 10
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {

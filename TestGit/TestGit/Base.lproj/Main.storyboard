@@ -66,16 +66,37 @@
                                     <action selector="ChangeColorWithSSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="iFe-Xu-CW5"/>
                                 </connections>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bez-vG-HD0">
+                                <rect key="frame" x="16" y="167" width="343" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" id="iR6-Qb-ekb">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iR6-Qb-ekb" id="oZa-xR-wg4">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4Fd-2q-NAg"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="top" secondItem="ErE-YE-QbW" secondAttribute="bottom" constant="8" id="079-i2-nEL"/>
                             <constraint firstItem="0GG-6Q-FEB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DXO-9q-Cis"/>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ev6-Ib-e2Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bez-vG-HD0" secondAttribute="bottom" constant="8" id="FpE-fx-h4X"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MDV-kF-Sxe"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TDi-gh-O8T"/>
+                            <constraint firstItem="Bez-vG-HD0" firstAttribute="top" secondItem="0GG-6Q-FEB" secondAttribute="bottom" constant="8" id="eIh-uW-e8q"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jIK-Sx-YAJ"/>
+                            <constraint firstItem="Bez-vG-HD0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lcg-5Z-zWt"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nav-2p-hh1"/>
+                            <constraint firstItem="Bez-vG-HD0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nb6-Qk-o8h"/>
                             <constraint firstItem="0GG-6Q-FEB" firstAttribute="top" secondItem="Gor-br-gpc" secondAttribute="bottom" constant="8" id="oHS-FG-0cS"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="top" secondItem="jSK-h7-TM7" secondAttribute="bottom" constant="8" id="wce-uX-ZCS"/>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y1Z-yD-rlK"/>
@@ -86,6 +107,7 @@
                     <connections>
                         <outlet property="mSegmentedBar" destination="Gor-br-gpc" id="ZdG-WJ-FRl"/>
                         <outlet property="mSegmentedBarB" destination="0GG-6Q-FEB" id="X4L-lj-MEa"/>
+                        <outlet property="mTableView" destination="Bez-vG-HD0" id="67m-5Y-6mX"/>
                         <outlet property="mTitleLabel" destination="ErE-YE-QbW" id="1mX-Xo-Svy"/>
                     </connections>
                 </viewController>
