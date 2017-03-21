@@ -19,7 +19,11 @@ class MyGroupModel : NSObject {
         let rObject = MyGroupModel()
         rObject.mTitle = sTitle
         
-        
+        for i in 0 ..< sNumber {
+            let j : Int = i*i
+        let tCell = MyCellModel.createMyCellWithTitle(sTitle: "cell \(i)", sSubTitle: " sqr=\(j)")
+        rObject.mList.append(tCell)
+        }
         return rObject
     }
     
