@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var mTableView : UITableView?
     
+    var mData : MyDataModel = MyDataModel()
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -57,6 +58,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         mTitleLabel?.text = "Jean-François CONTART"
         
         ChangeColor(sSender: mSegmentedBar!)
+        
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data", withCellNumber: 10))
         
         //ghgfhfhg
     }

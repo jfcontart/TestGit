@@ -13,6 +13,9 @@
 		686AF34A1E8110A50079CA2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686AF3491E8110A50079CA2E /* Assets.xcassets */; };
 		686AF34D1E8110A50079CA2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686AF34B1E8110A50079CA2E /* LaunchScreen.storyboard */; };
 		686AF3581E8110A60079CA2E /* TestGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686AF3571E8110A60079CA2E /* TestGitTests.swift */; };
+		686AF3631E8133120079CA2E /* MyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686AF3621E8133120079CA2E /* MyDataModel.swift */; };
+		686AF3651E8134720079CA2E /* MyGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686AF3641E8134720079CA2E /* MyGroupModel.swift */; };
+		686AF3671E81351C0079CA2E /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686AF3661E81351C0079CA2E /* MyCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		686AF3531E8110A60079CA2E /* TestGitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		686AF3571E8110A60079CA2E /* TestGitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGitTests.swift; sourceTree = "<group>"; };
 		686AF3591E8110A60079CA2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686AF3621E8133120079CA2E /* MyDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDataModel.swift; sourceTree = "<group>"; };
+		686AF3641E8134720079CA2E /* MyGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupModel.swift; sourceTree = "<group>"; };
+		686AF3661E81351C0079CA2E /* MyCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		686AF3411E8110A50079CA2E /* TestGit */ = {
 			isa = PBXGroup;
 			children = (
+				686AF3621E8133120079CA2E /* MyDataModel.swift */,
+				686AF3641E8134720079CA2E /* MyGroupModel.swift */,
+				686AF3661E81351C0079CA2E /* MyCellModel.swift */,
 				686AF3421E8110A50079CA2E /* AppDelegate.swift */,
 				686AF3441E8110A50079CA2E /* ViewController.swift */,
 				686AF3461E8110A50079CA2E /* Main.storyboard */,
@@ -201,8 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686AF3631E8133120079CA2E /* MyDataModel.swift in Sources */,
+				686AF3651E8134720079CA2E /* MyGroupModel.swift in Sources */,
 				686AF3451E8110A50079CA2E /* ViewController.swift in Sources */,
 				686AF3431E8110A50079CA2E /* AppDelegate.swift in Sources */,
+				686AF3671E81351C0079CA2E /* MyCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
