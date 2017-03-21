@@ -52,25 +52,40 @@
                                     <segment title="Green"/>
                                 </segments>
                                 <connections>
-                                    <action selector="ChangeColor" destination="BYZ-38-t0r" eventType="valueChanged" id="shP-P9-nnE"/>
+                                    <action selector="ChangeColorWithSSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="UjJ-xf-DGP"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0GG-6Q-FEB">
+                                <rect key="frame" x="16" y="131" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="LightGray"/>
+                                    <segment title="Gray"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ChangeColorWithSSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="iFe-Xu-CW5"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="top" secondItem="ErE-YE-QbW" secondAttribute="bottom" constant="8" id="079-i2-nEL"/>
+                            <constraint firstItem="0GG-6Q-FEB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DXO-9q-Cis"/>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ev6-Ib-e2Y"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MDV-kF-Sxe"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TDi-gh-O8T"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jIK-Sx-YAJ"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nav-2p-hh1"/>
+                            <constraint firstItem="0GG-6Q-FEB" firstAttribute="top" secondItem="Gor-br-gpc" secondAttribute="bottom" constant="8" id="oHS-FG-0cS"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="top" secondItem="jSK-h7-TM7" secondAttribute="bottom" constant="8" id="wce-uX-ZCS"/>
                             <constraint firstItem="jSK-h7-TM7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y1Z-yD-rlK"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ydS-4P-BNe"/>
+                            <constraint firstItem="0GG-6Q-FEB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ye3-dA-gvp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mSegmentedBar" destination="Gor-br-gpc" id="ZdG-WJ-FRl"/>
+                        <outlet property="mSegmentedBarB" destination="0GG-6Q-FEB" id="X4L-lj-MEa"/>
                         <outlet property="mTitleLabel" destination="ErE-YE-QbW" id="1mX-Xo-Svy"/>
                     </connections>
                 </viewController>
