@@ -70,12 +70,28 @@
                                 <rect key="frame" x="16" y="167" width="343" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" id="iR6-Qb-ekb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mycell" textLabel="CjS-Dt-ZI4" detailTextLabel="8XF-bh-8DO" style="IBUITableViewCellStyleSubtitle" id="iR6-Qb-ekb">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iR6-Qb-ekb" id="oZa-xR-wg4">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CjS-Dt-ZI4">
+                                                    <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8XF-bh-8DO">
+                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,6 +99,13 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="4Fd-2q-NAg"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cocotier.png" translatesAutoresizingMaskIntoConstraints="NO" id="TUk-qL-zci">
+                                <rect key="frame" x="16" y="20" width="95" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="V7j-ed-Oq9"/>
+                                    <constraint firstAttribute="width" constant="95" id="dYd-4p-46M"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -92,6 +115,8 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bez-vG-HD0" secondAttribute="bottom" constant="8" id="FpE-fx-h4X"/>
                             <constraint firstItem="ErE-YE-QbW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MDV-kF-Sxe"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TDi-gh-O8T"/>
+                            <constraint firstItem="TUk-qL-zci" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Zyj-rG-lc9"/>
+                            <constraint firstItem="TUk-qL-zci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cQx-Vy-ydj"/>
                             <constraint firstItem="Bez-vG-HD0" firstAttribute="top" secondItem="0GG-6Q-FEB" secondAttribute="bottom" constant="8" id="eIh-uW-e8q"/>
                             <constraint firstItem="Gor-br-gpc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jIK-Sx-YAJ"/>
                             <constraint firstItem="Bez-vG-HD0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lcg-5Z-zWt"/>
@@ -116,4 +141,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cocotier.png" width="131" height="187"/>
+    </resources>
 </document>

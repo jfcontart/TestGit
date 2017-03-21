@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         tCell.textLabel?.text = tCellData.mTitle
         tCell.detailTextLabel?.text = tCellData.mSubTitle
-        
+        tCell.imageView?.image = tGroup.mImage
 //        tCell.textLabel?.text = "Mon titre n° \(indexPath.section) - \(indexPath.row)"
         
         return tCell
@@ -72,9 +72,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         ChangeColor(sSender: mSegmentedBar!)
         
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data A", withCellNumber: 10))
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data B", withCellNumber: 10))
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data C", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data A", withAssetName: "Cocotier", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data B", withAssetName: "Poule", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data C", withAssetName: "Smurf", withCellNumber: 10))
         
         //ghgfhfhg
     }
