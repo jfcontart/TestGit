@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TestGit
+
+  Created by Jean-François CONTART on 21/03/2017.
+  Copyright © 2017 idemobi. All rights reserved.
+*/
+
+"ChickenTitleKey" = "Poule";
+"CoconutsTreeTitleKey" = "Cocotier";
+"SmurfTitleKey" = "Schtroumpf";

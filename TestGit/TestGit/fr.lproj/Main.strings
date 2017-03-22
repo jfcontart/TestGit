@@ -1,0 +1,30 @@
+
+/* Class = "UISegmentedControl"; 0GG-6Q-FEB.segmentTitles[0] = "Black"; ObjectID = "0GG-6Q-FEB"; */
+"0GG-6Q-FEB.segmentTitles[0]" = "Black";
+
+/* Class = "UISegmentedControl"; 0GG-6Q-FEB.segmentTitles[1] = "LightGray"; ObjectID = "0GG-6Q-FEB"; */
+"0GG-6Q-FEB.segmentTitles[1]" = "LightGray";
+
+/* Class = "UISegmentedControl"; 0GG-6Q-FEB.segmentTitles[2] = "Gray"; ObjectID = "0GG-6Q-FEB"; */
+"0GG-6Q-FEB.segmentTitles[2]" = "Gray";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "8XF-bh-8DO"; */
+"8XF-bh-8DO.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "CjS-Dt-ZI4"; */
+"CjS-Dt-ZI4.text" = "Title";
+
+/* Class = "UILabel"; text = "Hello World"; ObjectID = "ErE-YE-QbW"; */
+"ErE-YE-QbW.text" = "Hello World";
+
+/* Class = "UISegmentedControl"; Gor-br-gpc.segmentTitles[0] = "Blue"; ObjectID = "Gor-br-gpc"; */
+"Gor-br-gpc.segmentTitles[0]" = "Blue";
+
+/* Class = "UISegmentedControl"; Gor-br-gpc.segmentTitles[1] = "Red"; ObjectID = "Gor-br-gpc"; */
+"Gor-br-gpc.segmentTitles[1]" = "Red";
+
+/* Class = "UISegmentedControl"; Gor-br-gpc.segmentTitles[2] = "Green"; ObjectID = "Gor-br-gpc"; */
+"Gor-br-gpc.segmentTitles[2]" = "Green";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jSK-h7-TM7"; */
+"jSK-h7-TM7.normalTitle" = "Button";

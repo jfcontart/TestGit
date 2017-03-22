@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         let tGroup : MyGroupModel = mData.mList[section] as! MyGroupModel
-    
         return tGroup.mList.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -72,9 +71,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         ChangeColor(sSender: mSegmentedBar!)
         
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data A", withAssetName: "Cocotier", withCellNumber: 10))
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data B", withAssetName: "Poule", withCellNumber: 10))
-        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitle: "my data C", withAssetName: "Smurf", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "CoconutsTreeTitleKey", withAssetName: "Cocotier", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "ChickenTitleKey", withAssetName: "Poule", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "SmurfTitleKey", withAssetName: "Smurf", withCellNumber: 10))
         
         //ghgfhfhg
     }

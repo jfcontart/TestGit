@@ -14,7 +14,7 @@ class MyCellModel : NSObject {
     
     class func createMyCellWithTitle (sTitle : String, sSubTitle : String) -> MyCellModel {
         let rObject = MyCellModel()
-        rObject.mTitle = "name : \(sTitle)"
+        rObject.mTitle = "\(sTitle)"
         rObject.mSubTitle = " --- \(sSubTitle)"
         return rObject
     }
